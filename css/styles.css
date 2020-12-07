@@ -170,6 +170,33 @@ body {
     }
 }
 
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+
+    max-height: 50vh;
+    background-color: rgb(27, 27, 31);
+    padding: 20px;
+}
+
+.footer__h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+.footer__p {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
 @media(max-width:640px) {
     .section__grid-container {
         grid-template-columns: repeat(1, auto);
