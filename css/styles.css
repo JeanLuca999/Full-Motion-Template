@@ -68,8 +68,14 @@ body {
 }
 
 .section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
     background-color: rgb(32, 32, 36);
     min-height: 100vh;
+
+    padding: 20px;
 }
 
 .section__grid-container {
@@ -79,11 +85,6 @@ body {
     column-gap: 20px;
     row-gap: 20px;
     justify-content: center;
-
-    padding-top: 60px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
 }
 
 .section__grid-container__card {
@@ -131,7 +132,19 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
-    background-color: royalblue;
+    background-color: #70c7be;
+}
+
+#button1, #button6 {
+    background-color: #70c7be;
+}
+
+#button2, #button4 {
+    background-color: rgb(127, 146, 207);
+}
+
+#button3, #button5 {
+    background-color: rgb(157, 126, 208);
 }
 
 @media(max-width:950px) {
@@ -150,7 +163,6 @@ body {
 
     .section__grid-container {
         grid-template-columns: repeat(2, auto);
-        padding-top: 40px;
     }
 
     .section__grid-container__card__text-container p {
