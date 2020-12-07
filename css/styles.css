@@ -33,6 +33,7 @@ body {
 .header__container__h1 {
     font-family: 'Passion One', cursive;
     font-weight: bold;
+    text-align: center;
     text-shadow: 0 2px 2px black;
     font-size: 10rem;
     color: white;
@@ -64,4 +65,94 @@ body {
 .header__container__button__img {
     width: 40%;
     height: 40%;
+}
+
+.section {
+    background-color: rgb(32, 32, 36);
+    min-height: 100vh;
+}
+
+.section__grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+
+    padding: 20px 20px;
+}
+
+.section__grid-container__card {
+    background-color: rgb(44, 44, 50);
+    max-width: 400px;
+    height: 350px;
+    padding-bottom: 20px;
+}
+
+.section__grid-container__card__img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 50%;
+}
+
+.section__grid-container__card__text-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+}
+
+.section__grid-container__card__text-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.section__grid-container__card__text-container p {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    padding: 0 5px;
+    text-align: center;
+    color: white;
+}
+
+.section__grid-container__card__text-container button {
+    display: block;
+    font-size: 1.6rem;
+    width: 90%;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: royalblue;
+}
+
+@media(max-width:950px) {
+    .header__container__h1 {
+        font-size: 5rem;
+    }
+
+    .header__container__p {
+        font-size: 1.8rem;
+    }
+
+    .header__contianer__button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .section__grid-container {
+        grid-template-columns: repeat(2, auto);
+        padding-top: 40px;
+    }
+}
+
+@media(max-width:640px) {
+    .section__grid-container {
+        grid-template-columns: repeat(1, auto);
+    }
 }
